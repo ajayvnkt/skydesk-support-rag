@@ -1,0 +1,21 @@
+id: q06
+description: 'answerable: expected answer'
+tags:
+- answerable
+input: my 8 yr old wants to fly alone to visit grandma, is that allowed and what does it cost?
+checks:
+- kind: tool_result_contains
+  tool: route
+  value: '"answer"'
+  label: routes to answer
+  weight: 2
+- kind: tool_result_contains
+  tool: search_kb
+  value: unaccompanied-minors
+  label: retrieves unaccompanied-minors
+- kind: final_contains
+  value: $120
+  label: answer states $120
+- kind: no_errors
+- kind: max_latency_ms
+  value: 15000

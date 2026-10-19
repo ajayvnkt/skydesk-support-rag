@@ -1,0 +1,24 @@
+id: q09
+description: 'multi_doc: expected answer'
+tags:
+- multi_doc
+input: I'm on a SkyClassic fare and need to bring 2 checked suitcases. How much extra if I add it in the app?
+checks:
+- kind: tool_result_contains
+  tool: route
+  value: '"answer"'
+  label: routes to answer
+  weight: 2
+- kind: tool_result_contains
+  tool: search_kb
+  value: policy-baggage-allowance
+  label: retrieves policy-baggage-allowance
+- kind: final_contains
+  value: $40
+  label: answer states $40
+- kind: final_not_contains
+  value: $100
+  label: does not charge for the included bag ($100 total is wrong)
+- kind: no_errors
+- kind: max_latency_ms
+  value: 15000

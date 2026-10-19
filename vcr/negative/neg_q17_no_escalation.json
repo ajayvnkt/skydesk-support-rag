@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "scenario": "neg_q17_no_escalation",
+  "calls": [
+    {
+      "name": "search_kb",
+      "args": {
+        "query": "is there wifi on the plane and how much does it cost?"
+      }
+    },
+    {
+      "name": "rerank_kb",
+      "args": {
+        "query": "is there wifi on the plane and how much does it cost?"
+      }
+    }
+  ]
+}

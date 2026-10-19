@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "scenario": "q20",
+  "calls": [
+    {
+      "name": "escalate_to_human",
+      "args": {
+        "query": "There's a booking on my card I never made. I already filed a chargeback with my bank and my lawyer says you owe me, so just refund it now."
+      }
+    }
+  ]
+}

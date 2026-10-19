@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "scenario": "q06",
+  "calls": [
+    {
+      "name": "search_kb",
+      "args": {
+        "query": "my 8 yr old wants to fly alone to visit grandma, is that allowed and what does it cost?"
+      }
+    },
+    {
+      "name": "rerank_kb",
+      "args": {
+        "query": "my 8 yr old wants to fly alone to visit grandma, is that allowed and what does it cost?"
+      }
+    }
+  ]
+}

@@ -1,0 +1,10 @@
+# SkyDesk as an Agent Arena agent under test. Arena never calls a model itself here:
+# adapter.py shells out to `python -m rag ask --json` in this project's own venv.
+name: skydesk
+model: remote:skydesk/ask
+adapter: adapter.py:ask
+max_steps: 1
+system_prompt: |
+  (Remote agent. SkyDesk Support Assistant answers airline support questions from the SkyDesk
+  help center with hybrid BM25+dense retrieval and LLM rerank, cites doc ids, and escalates
+  to a human on low confidence or on guard-rail topics such as bereavement, fraud and legal.)

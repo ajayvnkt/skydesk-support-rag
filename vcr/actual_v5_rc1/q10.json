@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "scenario": "q10",
+  "calls": [
+    {
+      "name": "search_kb",
+      "args": {
+        "query": "my flight landed 4 hours late because of a technical issue with the plane. what compensation do i get and when does it expire?"
+      }
+    },
+    {
+      "name": "rerank_kb",
+      "args": {
+        "query": "my flight landed 4 hours late because of a technical issue with the plane. what compensation do i get and when does it expire?"
+      }
+    },
+    {
+      "name": "escalate_to_human",
+      "args": {
+        "query": "my flight landed 4 hours late because of a technical issue with the plane. what compensation do i get and when does it expire?"
+      }
+    }
+  ]
+}

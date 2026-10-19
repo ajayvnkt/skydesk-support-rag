@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "scenario": "q16",
+  "calls": [
+    {
+      "name": "search_kb",
+      "args": {
+        "query": "how much does it cost to change my flight"
+      }
+    },
+    {
+      "name": "rerank_kb",
+      "args": {
+        "query": "how much does it cost to change my flight"
+      }
+    }
+  ]
+}

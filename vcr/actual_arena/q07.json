@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "scenario": "q07",
+  "calls": [
+    {
+      "name": "search_kb",
+      "args": {
+        "query": "flight got delayed 5 and a half hours bc of a crew scheduling problem. what am i entitled to?"
+      }
+    },
+    {
+      "name": "rerank_kb",
+      "args": {
+        "query": "flight got delayed 5 and a half hours bc of a crew scheduling problem. what am i entitled to?"
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "scenario": "q08",
+  "calls": [
+    {
+      "name": "search_kb",
+      "args": {
+        "query": "How do I change the email address on my SkyMiles profile?"
+      }
+    },
+    {
+      "name": "rerank_kb",
+      "args": {
+        "query": "How do I change the email address on my SkyMiles profile?"
+      }
+    }
+  ]
+}

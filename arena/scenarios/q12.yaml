@@ -1,0 +1,21 @@
+id: q12
+description: 'exact_match: expected answer'
+tags:
+- exact_match
+input: getting error SD-ERR-112 when i try to pay, what does that mean??
+checks:
+- kind: tool_result_contains
+  tool: route
+  value: '"answer"'
+  label: routes to answer
+  weight: 2
+- kind: tool_result_contains
+  tool: search_kb
+  value: manual-error-codes
+  label: retrieves manual-error-codes
+- kind: final_contains
+  value: declined
+  label: answer states declined
+- kind: no_errors
+- kind: max_latency_ms
+  value: 15000

@@ -1,0 +1,14 @@
+id: q16
+description: 'ambiguous: expected clarify'
+tags:
+- ambiguous
+input: how much does it cost to change my flight
+checks:
+- kind: tool_result_contains
+  tool: route
+  value: '"clarify"'
+  label: routes to clarify
+  weight: 2
+- kind: no_errors
+- kind: max_latency_ms
+  value: 15000

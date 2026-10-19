@@ -1,0 +1,21 @@
+id: q02
+description: 'answerable: expected answer'
+tags:
+- answerable
+input: I booked a SkyLite ticket 3 hours ago, the flight is in 2 weeks. Can I still cancel and get all my money back?
+checks:
+- kind: tool_result_contains
+  tool: route
+  value: '"answer"'
+  label: routes to answer
+  weight: 2
+- kind: tool_result_contains
+  tool: search_kb
+  value: policy-24-hour-cancellation
+  label: retrieves policy-24-hour-cancellation
+- kind: final_contains
+  value: 24 hours
+  label: answer states 24 hours
+- kind: no_errors
+- kind: max_latency_ms
+  value: 15000

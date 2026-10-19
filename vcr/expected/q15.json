@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "scenario": "q15",
+  "calls": [
+    {
+      "name": "search_kb",
+      "args": {
+        "query": "can i bring a bag on board?"
+      }
+    },
+    {
+      "name": "rerank_kb",
+      "args": {
+        "query": "can i bring a bag on board?"
+      }
+    }
+  ]
+}

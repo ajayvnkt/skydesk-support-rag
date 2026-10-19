@@ -1,0 +1,21 @@
+id: q07
+description: 'answerable: expected answer'
+tags:
+- answerable
+input: flight got delayed 5 and a half hours bc of a crew scheduling problem. what am i entitled to?
+checks:
+- kind: tool_result_contains
+  tool: route
+  value: '"answer"'
+  label: routes to answer
+  weight: 2
+- kind: tool_result_contains
+  tool: search_kb
+  value: policy-delay-compensation
+  label: retrieves policy-delay-compensation
+- kind: final_contains
+  value: $250
+  label: answer states $250
+- kind: no_errors
+- kind: max_latency_ms
+  value: 15000

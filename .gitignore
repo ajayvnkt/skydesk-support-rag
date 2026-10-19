@@ -1,0 +1,17 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+store/
+submission/
+video/.venv/
+video/models/
+video/out/
+# local run artefacts: per-browser chat logs, process stdout, Arena run store (summary kept in arena/last_run.txt)
+logs/ui/
+logs/*.out
+arena/.arena/
+# local code-graph cache
+graphify-out/

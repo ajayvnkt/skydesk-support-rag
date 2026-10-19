@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "scenario": "q02",
+  "calls": [
+    {
+      "name": "search_kb",
+      "args": {
+        "query": "I booked a SkyLite ticket 3 hours ago, the flight is in 2 weeks. Can I still cancel and get all my money back?"
+      }
+    },
+    {
+      "name": "rerank_kb",
+      "args": {
+        "query": "I booked a SkyLite ticket 3 hours ago, the flight is in 2 weeks. Can I still cancel and get all my money back?"
+      }
+    }
+  ]
+}

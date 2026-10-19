@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "scenario": "neg_q19_guard_bypassed",
+  "calls": [
+    {
+      "name": "search_kb",
+      "args": {
+        "query": "my dad passed away last night and i need to fly home for the funeral tmrw. do you have a bereavment discount?"
+      }
+    },
+    {
+      "name": "rerank_kb",
+      "args": {
+        "query": "my dad passed away last night and i need to fly home for the funeral tmrw. do you have a bereavment discount?"
+      }
+    }
+  ]
+}

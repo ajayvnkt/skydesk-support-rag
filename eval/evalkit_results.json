@@ -1,0 +1,295 @@
+{
+  "run": "v5_final",
+  "baseline": "v0_baseline",
+  "previous": "v4_final",
+  "calibration_confidence": {
+    "score": "confidence",
+    "n_with_score": 18,
+    "n_route_wrong": 1,
+    "wrong_ids": [
+      "q05"
+    ],
+    "ece_5bins": {
+      "value": 0.15133333333333332,
+      "binning": {
+        "scheme": "equal_width",
+        "requested_bins": 5,
+        "edges": [
+          0.0,
+          0.2,
+          0.4,
+          0.6,
+          0.8,
+          1.0
+        ],
+        "occupied_bins": 3,
+        "interval": "[lo, hi), final bin closed at 1.0",
+        "quantile_convention": null
+      },
+      "reliability_curve": [
+        {
+          "lo": 0.4,
+          "hi": 0.6,
+          "n": 1,
+          "accuracy": 1.0,
+          "mean_confidence": 0.596,
+          "gap": -0.404
+        },
+        {
+          "lo": 0.6,
+          "hi": 0.8,
+          "n": 5,
+          "accuracy": 1.0,
+          "mean_confidence": 0.674,
+          "gap": -0.32599999999999996
+        },
+        {
+          "lo": 0.8,
+          "hi": 1.0,
+          "n": 12,
+          "accuracy": 0.9166666666666666,
+          "mean_confidence": 0.9741666666666666,
+          "gap": 0.057499999999999996
+        }
+      ]
+    },
+    "brier": 0.09131655555555555,
+    "auroc": 0.5
+  },
+  "calibration_support": {
+    "score": "support",
+    "n_with_score": 18,
+    "n_route_wrong": 1,
+    "wrong_ids": [
+      "q05"
+    ],
+    "ece_5bins": {
+      "value": 0.21955555555555561,
+      "binning": {
+        "scheme": "equal_width",
+        "requested_bins": 5,
+        "edges": [
+          0.0,
+          0.2,
+          0.4,
+          0.6,
+          0.8,
+          1.0
+        ],
+        "occupied_bins": 5,
+        "interval": "[lo, hi), final bin closed at 1.0",
+        "quantile_convention": null
+      },
+      "reliability_curve": [
+        {
+          "lo": 0.0,
+          "hi": 0.2,
+          "n": 1,
+          "accuracy": 1.0,
+          "mean_confidence": 0.037,
+          "gap": -0.963
+        },
+        {
+          "lo": 0.2,
+          "hi": 0.4,
+          "n": 1,
+          "accuracy": 1.0,
+          "mean_confidence": 0.35,
+          "gap": -0.65
+        },
+        {
+          "lo": 0.4,
+          "hi": 0.6,
+          "n": 1,
+          "accuracy": 1.0,
+          "mean_confidence": 0.596,
+          "gap": -0.404
+        },
+        {
+          "lo": 0.6,
+          "hi": 0.8,
+          "n": 4,
+          "accuracy": 1.0,
+          "mean_confidence": 0.698,
+          "gap": -0.30200000000000005
+        },
+        {
+          "lo": 0.8,
+          "hi": 1.0,
+          "n": 11,
+          "accuracy": 0.9090909090909091,
+          "mean_confidence": 0.9751818181818183,
+          "gap": 0.0660909090909092
+        }
+      ]
+    },
+    "brier": 0.15687566666666666,
+    "auroc": 0.4411764705882353
+  },
+  "calibration_v4_confidence": {
+    "score": "confidence",
+    "n_with_score": 18,
+    "n_route_wrong": 2,
+    "wrong_ids": [
+      "q15",
+      "q16"
+    ],
+    "ece_5bins": {
+      "value": 0.23949999999999994,
+      "binning": {
+        "scheme": "equal_width",
+        "requested_bins": 5,
+        "edges": [
+          0.0,
+          0.2,
+          0.4,
+          0.6,
+          0.8,
+          1.0
+        ],
+        "occupied_bins": 5,
+        "interval": "[lo, hi), final bin closed at 1.0",
+        "quantile_convention": null
+      },
+      "reliability_curve": [
+        {
+          "lo": 0.0,
+          "hi": 0.2,
+          "n": 1,
+          "accuracy": 1.0,
+          "mean_confidence": 0.037,
+          "gap": -0.963
+        },
+        {
+          "lo": 0.2,
+          "hi": 0.4,
+          "n": 1,
+          "accuracy": 1.0,
+          "mean_confidence": 0.35,
+          "gap": -0.65
+        },
+        {
+          "lo": 0.4,
+          "hi": 0.6,
+          "n": 1,
+          "accuracy": 1.0,
+          "mean_confidence": 0.558,
+          "gap": -0.44199999999999995
+        },
+        {
+          "lo": 0.6,
+          "hi": 0.8,
+          "n": 2,
+          "accuracy": 1.0,
+          "mean_confidence": 0.698,
+          "gap": -0.30200000000000005
+        },
+        {
+          "lo": 0.8,
+          "hi": 1.0,
+          "n": 13,
+          "accuracy": 0.8461538461538461,
+          "mean_confidence": 0.9732307692307691,
+          "gap": 0.12707692307692298
+        }
+      ]
+    },
+    "brier": 0.2082276111111111,
+    "auroc": 0.125
+  },
+  "route_accuracy": {
+    "k": 19,
+    "n": 20,
+    "rate": 0.95,
+    "wilson95": [
+      0.7639,
+      0.9911
+    ]
+  },
+  "fcr_strict_literal": {
+    "k": 10,
+    "n": 16,
+    "rate": 0.625,
+    "wilson95": [
+      0.3864,
+      0.8152
+    ]
+  },
+  "fcr_manual": {
+    "k": 12,
+    "n": 16,
+    "rate": 0.75,
+    "wilson95": [
+      0.505,
+      0.8982
+    ]
+  },
+  "faithful_manual": {
+    "k": 15,
+    "n": 16,
+    "rate": 0.9375,
+    "wilson95": [
+      0.7167,
+      0.9889
+    ]
+  },
+  "paired_route_v0_vs_v5": {
+    "before_correct": 15,
+    "after_correct": 19,
+    "gains": [
+      "q03",
+      "q06",
+      "q15",
+      "q16",
+      "q18"
+    ],
+    "losses": [
+      "q05"
+    ],
+    "both_correct": 14,
+    "both_wrong": 0,
+    "exact_mcnemar_p": 0.21875,
+    "newcombe": {
+      "status": "AVAILABLE",
+      "method": "newcombe_method_10",
+      "interval": [
+        -0.04604520968578418,
+        0.427822351427092
+      ],
+      "width": 0.4738675611128762,
+      "includes_zero": true,
+      "confidence": 0.95,
+      "scope": "independent paired binary cases; approximate coverage, not a universal conservative bound or an inversion of exact McNemar",
+      "label": "paired score interval; local simulated coverage 1.0000 at n=120 and nominal confidence 0.95",
+      "caution": "Local simulated coverage is 1.0000 at n=120 and 0.9110 at n=240, against nominal confidence 0.95. These Monte Carlo measurements apply only to the listed independent sparse paired-binary design; not a universal coverage guarantee. Inspect below_nominal and Monte Carlo intervals."
+    }
+  },
+  "paired_route_v4_vs_v5": {
+    "before_correct": 18,
+    "after_correct": 19,
+    "gains": [
+      "q15",
+      "q16"
+    ],
+    "losses": [
+      "q05"
+    ],
+    "both_correct": 17,
+    "both_wrong": 0,
+    "exact_mcnemar_p": 1.0,
+    "newcombe": {
+      "status": "AVAILABLE",
+      "method": "newcombe_method_10",
+      "interval": [
+        -0.1546986444418123,
+        0.2582535182509945
+      ],
+      "width": 0.4129521626928068,
+      "includes_zero": true,
+      "confidence": 0.95,
+      "scope": "independent paired binary cases; approximate coverage, not a universal conservative bound or an inversion of exact McNemar",
+      "label": "paired score interval; local simulated coverage 1.0000 at n=120 and nominal confidence 0.95",
+      "caution": "Local simulated coverage is 1.0000 at n=120 and 0.9110 at n=240, against nominal confidence 0.95. These Monte Carlo measurements apply only to the listed independent sparse paired-binary design; not a universal coverage guarantee. Inspect below_nominal and Monte Carlo intervals."
+    }
+  }
+}

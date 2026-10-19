@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "scenario": "q03",
+  "calls": [
+    {
+      "name": "search_kb",
+      "args": {
+        "query": "my suitcase didnt arrive and I need to buy clothes, how much will you reimburse while i wait?"
+      }
+    },
+    {
+      "name": "rerank_kb",
+      "args": {
+        "query": "my suitcase didnt arrive and I need to buy clothes, how much will you reimburse while i wait?"
+      }
+    }
+  ]
+}

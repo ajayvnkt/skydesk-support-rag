@@ -1,0 +1,343 @@
+PASS q01  score=1.00  steps=1 tools=2 5.7s  $0.0004  run_8848a37fe7
+   ✔ routes to answer
+   ✔ retrieves policy-baggage-allowance
+   ✔ answer states 23 kg
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q01  score=1.00  steps=1 tools=2 5.4s  $0.0004  run_f102952d35
+   ✔ routes to answer
+   ✔ retrieves policy-baggage-allowance
+   ✔ answer states 23 kg
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q01  score=1.00  steps=1 tools=2 5.9s  $0.0004  run_a28a9b615c
+   ✔ routes to answer
+   ✔ retrieves policy-baggage-allowance
+   ✔ answer states 23 kg
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q02  score=1.00  steps=1 tools=2 5.5s  $0.0004  run_1b7b3c5451
+   ✔ routes to answer
+   ✔ retrieves policy-24-hour-cancellation
+   ✔ answer states 24 hours
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q02  score=1.00  steps=1 tools=2 4.5s  $0.0004  run_0f0993f117
+   ✔ routes to answer
+   ✔ retrieves policy-24-hour-cancellation
+   ✔ answer states 24 hours
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q02  score=1.00  steps=1 tools=2 5.1s  $0.0004  run_7a95ded51b
+   ✔ routes to answer
+   ✔ retrieves policy-24-hour-cancellation
+   ✔ answer states 24 hours
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q03  score=1.00  steps=1 tools=2 5.7s  $0.0004  run_e63840275c
+   ✔ routes to answer
+   ✔ retrieves policy-baggage-claims
+   ✔ answer states $50
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q03  score=1.00  steps=1 tools=2 5.7s  $0.0003  run_c360bc001f
+   ✔ routes to answer
+   ✔ retrieves policy-baggage-claims
+   ✔ answer states $50
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q03  score=1.00  steps=1 tools=2 3.9s  $0.0003  run_258d050049
+   ✔ routes to answer
+   ✔ retrieves policy-baggage-claims
+   ✔ answer states $50
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q04  score=1.00  steps=1 tools=2 3.8s  $0.0003  run_36a386d16a
+   ✔ routes to answer
+   ✔ retrieves policy-vouchers-credits
+   ✔ answer states 12 months
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q04  score=1.00  steps=1 tools=2 4.4s  $0.0003  run_e0bfc3727f
+   ✔ routes to answer
+   ✔ retrieves policy-vouchers-credits
+   ✔ answer states 12 months
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q04  score=1.00  steps=1 tools=2 5.4s  $0.0003  run_448befcdf7
+   ✔ routes to answer
+   ✔ retrieves policy-vouchers-credits
+   ✔ answer states 12 months
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q05  score=1.00  steps=1 tools=2 6.7s  $0.0003  run_071d914378
+   ✔ routes to answer
+   ✔ retrieves pets-policy
+   ✔ answer states 8 kg
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q05  score=1.00  steps=1 tools=2 9.0s  $0.0003  run_4892a05f71
+   ✔ routes to answer
+   ✔ retrieves pets-policy
+   ✔ answer states 8 kg
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q05  score=1.00  steps=1 tools=2 9.4s  $0.0003  run_5824c44991
+   ✔ routes to answer
+   ✔ retrieves pets-policy
+   ✔ answer states 8 kg
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q06  score=1.00  steps=1 tools=2 9.2s  $0.0003  run_2dda6225f6
+   ✔ routes to answer
+   ✔ retrieves unaccompanied-minors
+   ✔ answer states $120
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q06  score=1.00  steps=1 tools=2 8.6s  $0.0003  run_63de1bc97e
+   ✔ routes to answer
+   ✔ retrieves unaccompanied-minors
+   ✔ answer states $120
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q06  score=1.00  steps=1 tools=2 7.1s  $0.0003  run_7763ef0a93
+   ✔ routes to answer
+   ✔ retrieves unaccompanied-minors
+   ✔ answer states $120
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q07  score=1.00  steps=1 tools=2 7.0s  $0.0004  run_0489cafd58
+   ✔ routes to answer
+   ✔ retrieves policy-delay-compensation
+   ✔ answer states $250
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q07  score=1.00  steps=1 tools=2 4.8s  $0.0004  run_f79f91844a
+   ✔ routes to answer
+   ✔ retrieves policy-delay-compensation
+   ✔ answer states $250
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q07  score=1.00  steps=1 tools=2 6.9s  $0.0004  run_7a38198de6
+   ✔ routes to answer
+   ✔ retrieves policy-delay-compensation
+   ✔ answer states $250
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q08  score=1.00  steps=1 tools=2 7.1s  $0.0003  run_354cdba4b7
+   ✔ routes to answer
+   ✔ retrieves manual-update-contact-details
+   ✔ answer states Profile > Personal details > Contact
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q08  score=1.00  steps=1 tools=2 8.1s  $0.0003  run_5fdec2090e
+   ✔ routes to answer
+   ✔ retrieves manual-update-contact-details
+   ✔ answer states Profile > Personal details > Contact
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+FAIL q08  score=0.83  steps=1 tools=2 7.1s  $0.0003  run_b3f62e349b
+   ✔ routes to answer
+   ✔ retrieves manual-update-contact-details
+   ✘ answer states Profile > Personal details > Contact  final: 'To change the 
+email address on your SkyMiles profile, you need to go to your profile, then 
+personal details, and contact information. Tap **Edit** next to the email 
+address, enter the new email, and t'
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+FAIL q09  score=0.86  steps=1 tools=2 7.2s  $0.0004  run_b98ba3e045
+   ✔ routes to answer
+   ✔ retrieves policy-baggage-allowance
+   ✘ answer states $40  final: 'Your SkyClassic fare includes 1 checked bag with
+a maximum weight of 23 kg . Adding a second checked bag in the app will be an 
+extra, and the price for that extra bag appears'
+   ✔ does not charge for the included bag ($100 total is wrong)
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q09  score=1.00  steps=1 tools=2 11.2s  $0.0010  run_9f1d83bf03
+   ✔ routes to answer
+   ✔ retrieves policy-baggage-allowance
+   ✔ answer states $40
+   ✔ does not charge for the included bag ($100 total is wrong)
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+FAIL q09  score=0.86  steps=1 tools=2 9.6s  $0.0004  run_7ba471765b
+   ✔ routes to answer
+   ✔ retrieves policy-baggage-allowance
+   ✘ answer states $40  final: 'A SkyClassic fare includes 1 checked bag, max 23
+kg, so you already have 1 checked bag included . You want to bring 2 checked 
+suitcases, which means 1 extra checked bag beyon'
+   ✔ does not charge for the included bag ($100 total is wrong)
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q10  score=1.00  steps=1 tools=2 8.6s  $0.0003  run_1c39b76d55
+   ✔ routes to answer
+   ✔ retrieves policy-delay-compensation
+   ✔ answer states $100
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q10  score=1.00  steps=1 tools=2 5.1s  $0.0003  run_6bef5d7288
+   ✔ routes to answer
+   ✔ retrieves policy-delay-compensation
+   ✔ answer states $100
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q10  score=1.00  steps=1 tools=2 6.4s  $0.0003  run_08d5e9cb89
+   ✔ routes to answer
+   ✔ retrieves policy-delay-compensation
+   ✔ answer states $100
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q11  score=1.00  steps=1 tools=2 6.2s  $0.0004  run_9ae6b494c9
+   ✔ routes to answer
+   ✔ retrieves policy-24-hour-cancellation
+   ✔ answer states non-refundable
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+FAIL q11  score=0.83  steps=1 tools=2 4.3s  $0.0004  run_c26c325fcb
+   ✔ routes to answer
+   ✔ retrieves policy-24-hour-cancellation
+   ✘ answer states non-refundable  final: "You can cancel a SkyLite booking 
+within 24 hours of making it and receive a full refund to your original payment 
+method, as long as the booking was made at least 7 days before the first 
+flight's depar"
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q11  score=1.00  steps=1 tools=2 4.3s  $0.0004  run_db1612f859
+   ✔ routes to answer
+   ✔ retrieves policy-24-hour-cancellation
+   ✔ answer states non-refundable
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q12  score=1.00  steps=1 tools=2 4.3s  $0.0003  run_088c5ec023
+   ✔ routes to answer
+   ✔ retrieves manual-error-codes
+   ✔ answer states declined
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q12  score=1.00  steps=1 tools=2 3.9s  $0.0003  run_d153f2df37
+   ✔ routes to answer
+   ✔ retrieves manual-error-codes
+   ✔ answer states declined
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q12  score=1.00  steps=1 tools=2 4.1s  $0.0003  run_2a64b47600
+   ✔ routes to answer
+   ✔ retrieves manual-error-codes
+   ✔ answer states declined
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q13  score=1.00  steps=1 tools=2 4.1s  $0.0003  run_da994f15dc
+   ✔ routes to answer
+   ✔ retrieves manual-error-codes
+   ✔ answer states 32 kg
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q13  score=1.00  steps=1 tools=2 4.1s  $0.0003  run_f987f135c9
+   ✔ routes to answer
+   ✔ retrieves manual-error-codes
+   ✔ answer states 32 kg
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q13  score=1.00  steps=1 tools=2 4.2s  $0.0003  run_0b2f595e7f
+   ✔ routes to answer
+   ✔ retrieves manual-error-codes
+   ✔ answer states 32 kg
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q14  score=1.00  steps=1 tools=2 5.9s  $0.0011  run_39ff076630
+   ✔ routes to answer
+   ✔ retrieves policy-change-fees
+   ✔ answer states \$0|free|no change fee|without a change fee
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q14  score=1.00  steps=1 tools=2 4.2s  $0.0003  run_a1f1e915da
+   ✔ routes to answer
+   ✔ retrieves policy-change-fees
+   ✔ answer states \$0|free|no change fee|without a change fee
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q14  score=1.00  steps=1 tools=2 5.4s  $0.0010  run_bff8cb8904
+   ✔ routes to answer
+   ✔ retrieves policy-change-fees
+   ✔ answer states \$0|free|no change fee|without a change fee
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q15  score=1.00  steps=1 tools=2 3.3s  $0.0002  run_b64cbf365f
+   ✔ routes to clarify
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q15  score=1.00  steps=1 tools=2 3.7s  $0.0002  run_61c331374b
+   ✔ routes to clarify
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q15  score=1.00  steps=1 tools=2 3.4s  $0.0002  run_590b701205
+   ✔ routes to clarify
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q16  score=1.00  steps=1 tools=2 3.4s  $0.0002  run_1b32e13a37
+   ✔ routes to clarify
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q16  score=1.00  steps=1 tools=2 3.3s  $0.0002  run_20e57868ab
+   ✔ routes to clarify
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q16  score=1.00  steps=1 tools=2 3.1s  $0.0002  run_e9d700016e
+   ✔ routes to clarify
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q17  score=1.00  steps=1 tools=2 3.2s  $0.0002  run_2abf97eaa0
+   ✔ routes to escalate
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q17  score=1.00  steps=1 tools=2 3.0s  $0.0002  run_42d73d3e19
+   ✔ routes to escalate
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q17  score=1.00  steps=1 tools=2 3.2s  $0.0002  run_e59cf5215d
+   ✔ routes to escalate
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q18  score=1.00  steps=1 tools=2 3.4s  $0.0002  run_f45fa939d0
+   ✔ routes to escalate
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q18  score=1.00  steps=1 tools=2 3.6s  $0.0002  run_135c87ec15
+   ✔ routes to escalate
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q18  score=1.00  steps=1 tools=2 3.6s  $0.0002  run_8fdb974fe9
+   ✔ routes to escalate
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q19  score=1.00  steps=1 tools=1 1.6s  run_415d883dc8
+   ✔ routes to escalate
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q19  score=1.00  steps=1 tools=1 1.6s  run_e0c6de0cc9
+   ✔ routes to escalate
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q19  score=1.00  steps=1 tools=1 1.7s  run_6cadbcdf92
+   ✔ routes to escalate
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q20  score=1.00  steps=1 tools=1 1.6s  run_876399e018
+   ✔ routes to escalate
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q20  score=1.00  steps=1 tools=1 1.7s  run_02001525ae
+   ✔ routes to escalate
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+PASS q20  score=1.00  steps=1 tools=1 1.7s  run_322b9064c4
+   ✔ routes to escalate
+   ✔ no tool or provider errors
+   ✔ finishes within 15000 ms
+────────────────────────────────────────────────────────────────────────────────
+56/60 passed  mean score=0.99  cost=$0.0182  runs saved to 
+/Users/vnktajay/Projects/skydesk-support-rag/arena/.arena
+Suite integrity and offline diagnosis: 
+/Users/vnktajay/Projects/skydesk-support-rag/arena/.arena/suite-integrity.json, 
+diagnosis.json

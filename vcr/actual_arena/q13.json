@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "scenario": "q13",
+  "calls": [
+    {
+      "name": "search_kb",
+      "args": {
+        "query": "app shows BAG-301 when I add my bag"
+      }
+    },
+    {
+      "name": "rerank_kb",
+      "args": {
+        "query": "app shows BAG-301 when I add my bag"
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "scenario": "q19",
+  "calls": [
+    {
+      "name": "escalate_to_human",
+      "args": {
+        "query": "my dad passed away last night and i need to fly home for the funeral tmrw. do you have a bereavment discount?"
+      }
+    }
+  ]
+}

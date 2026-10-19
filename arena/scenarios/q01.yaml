@@ -1,0 +1,21 @@
+id: q01
+description: 'answerable: expected answer'
+tags:
+- answerable
+input: how many kg can i check in on skyclassic?
+checks:
+- kind: tool_result_contains
+  tool: route
+  value: '"answer"'
+  label: routes to answer
+  weight: 2
+- kind: tool_result_contains
+  tool: search_kb
+  value: policy-baggage-allowance
+  label: retrieves policy-baggage-allowance
+- kind: final_contains
+  value: 23 kg
+  label: answer states 23 kg
+- kind: no_errors
+- kind: max_latency_ms
+  value: 15000

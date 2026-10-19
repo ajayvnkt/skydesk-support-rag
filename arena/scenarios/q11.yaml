@@ -1,0 +1,21 @@
+id: q11
+description: 'multi_doc: expected answer'
+tags:
+- multi_doc
+input: Booked a SkyLite ticket 3 days ago for a flight next month, can I cancel it for a refund?
+checks:
+- kind: tool_result_contains
+  tool: route
+  value: '"answer"'
+  label: routes to answer
+  weight: 2
+- kind: tool_result_contains
+  tool: search_kb
+  value: policy-24-hour-cancellation
+  label: retrieves policy-24-hour-cancellation
+- kind: final_contains
+  value: non-refundable
+  label: answer states non-refundable
+- kind: no_errors
+- kind: max_latency_ms
+  value: 15000

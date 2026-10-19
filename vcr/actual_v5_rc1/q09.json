@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "scenario": "q09",
+  "calls": [
+    {
+      "name": "search_kb",
+      "args": {
+        "query": "I'm on a SkyClassic fare and need to bring 2 checked suitcases. How much extra if I add it in the app?"
+      }
+    },
+    {
+      "name": "rerank_kb",
+      "args": {
+        "query": "I'm on a SkyClassic fare and need to bring 2 checked suitcases. How much extra if I add it in the app?"
+      }
+    }
+  ]
+}

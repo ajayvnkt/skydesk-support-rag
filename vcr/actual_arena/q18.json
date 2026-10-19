@@ -1,0 +1,24 @@
+{
+  "version": 1,
+  "scenario": "q18",
+  "calls": [
+    {
+      "name": "search_kb",
+      "args": {
+        "query": "do u guys sell travel insurance? how much is it for a domestic trip"
+      }
+    },
+    {
+      "name": "rerank_kb",
+      "args": {
+        "query": "do u guys sell travel insurance? how much is it for a domestic trip"
+      }
+    },
+    {
+      "name": "escalate_to_human",
+      "args": {
+        "query": "do u guys sell travel insurance? how much is it for a domestic trip"
+      }
+    }
+  ]
+}

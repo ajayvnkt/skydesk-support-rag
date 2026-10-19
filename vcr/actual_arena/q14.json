@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "scenario": "q14",
+  "calls": [
+    {
+      "name": "search_kb",
+      "args": {
+        "query": "Does SkyFlex let me change my flight without a change fee?"
+      }
+    },
+    {
+      "name": "rerank_kb",
+      "args": {
+        "query": "Does SkyFlex let me change my flight without a change fee?"
+      }
+    }
+  ]
+}

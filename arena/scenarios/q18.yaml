@@ -1,0 +1,14 @@
+id: q18
+description: 'unanswerable: expected escalate'
+tags:
+- unanswerable
+input: do u guys sell travel insurance? how much is it for a domestic trip
+checks:
+- kind: tool_result_contains
+  tool: route
+  value: '"escalate"'
+  label: routes to escalate
+  weight: 2
+- kind: no_errors
+- kind: max_latency_ms
+  value: 15000

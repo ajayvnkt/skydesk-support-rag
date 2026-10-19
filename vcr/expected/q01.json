@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "scenario": "q01",
+  "calls": [
+    {
+      "name": "search_kb",
+      "args": {
+        "query": "how many kg can i check in on skyclassic?"
+      }
+    },
+    {
+      "name": "rerank_kb",
+      "args": {
+        "query": "how many kg can i check in on skyclassic?"
+      }
+    }
+  ]
+}

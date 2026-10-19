@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "scenario": "q05",
+  "calls": [
+    {
+      "name": "search_kb",
+      "args": {
+        "query": "can my cat fly in the cabin with me? what's the weight limit and fee"
+      }
+    },
+    {
+      "name": "rerank_kb",
+      "args": {
+        "query": "can my cat fly in the cabin with me? what's the weight limit and fee"
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+id: q03
+description: 'answerable: expected answer'
+tags:
+- answerable
+input: my suitcase didnt arrive and I need to buy clothes, how much will you reimburse while i wait?
+checks:
+- kind: tool_result_contains
+  tool: route
+  value: '"answer"'
+  label: routes to answer
+  weight: 2
+- kind: tool_result_contains
+  tool: search_kb
+  value: policy-baggage-claims
+  label: retrieves policy-baggage-claims
+- kind: final_contains
+  value: $50
+  label: answer states $50
+- kind: no_errors
+- kind: max_latency_ms
+  value: 15000

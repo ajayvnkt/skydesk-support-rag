@@ -1,0 +1,21 @@
+id: q14
+description: 'exact_match: expected answer'
+tags:
+- exact_match
+input: Does SkyFlex let me change my flight without a change fee?
+checks:
+- kind: tool_result_contains
+  tool: route
+  value: '"answer"'
+  label: routes to answer
+  weight: 2
+- kind: tool_result_contains
+  tool: search_kb
+  value: policy-change-fees
+  label: retrieves policy-change-fees
+- kind: final_regex
+  value: \$0|free|no change fee|without a change fee
+  label: answer states \$0|free|no change fee|without a change fee
+- kind: no_errors
+- kind: max_latency_ms
+  value: 15000

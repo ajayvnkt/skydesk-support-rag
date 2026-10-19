@@ -1,0 +1,21 @@
+id: q08
+description: 'answerable: expected answer'
+tags:
+- answerable
+input: How do I change the email address on my SkyMiles profile?
+checks:
+- kind: tool_result_contains
+  tool: route
+  value: '"answer"'
+  label: routes to answer
+  weight: 2
+- kind: tool_result_contains
+  tool: search_kb
+  value: manual-update-contact-details
+  label: retrieves manual-update-contact-details
+- kind: final_contains
+  value: Profile > Personal details > Contact
+  label: answer states Profile > Personal details > Contact
+- kind: no_errors
+- kind: max_latency_ms
+  value: 15000

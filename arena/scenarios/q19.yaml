@@ -1,0 +1,14 @@
+id: q19
+description: 'must_escalate: expected escalate'
+tags:
+- must_escalate
+input: my dad passed away last night and i need to fly home for the funeral tmrw. do you have a bereavment discount?
+checks:
+- kind: tool_result_contains
+  tool: route
+  value: '"escalate"'
+  label: routes to escalate
+  weight: 2
+- kind: no_errors
+- kind: max_latency_ms
+  value: 15000

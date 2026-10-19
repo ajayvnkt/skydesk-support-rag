@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "scenario": "q11",
+  "calls": [
+    {
+      "name": "search_kb",
+      "args": {
+        "query": "Booked a SkyLite ticket 3 days ago for a flight next month, can I cancel it for a refund?"
+      }
+    },
+    {
+      "name": "rerank_kb",
+      "args": {
+        "query": "Booked a SkyLite ticket 3 days ago for a flight next month, can I cancel it for a refund?"
+      }
+    }
+  ]
+}

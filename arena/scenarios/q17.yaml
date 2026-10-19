@@ -1,0 +1,14 @@
+id: q17
+description: 'unanswerable: expected escalate'
+tags:
+- unanswerable
+input: is there wifi on the plane and how much does it cost?
+checks:
+- kind: tool_result_contains
+  tool: route
+  value: '"escalate"'
+  label: routes to escalate
+  weight: 2
+- kind: no_errors
+- kind: max_latency_ms
+  value: 15000

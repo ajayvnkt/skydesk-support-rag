@@ -1,0 +1,14 @@
+id: q15
+description: 'ambiguous: expected clarify'
+tags:
+- ambiguous
+input: can i bring a bag on board?
+checks:
+- kind: tool_result_contains
+  tool: route
+  value: '"clarify"'
+  label: routes to clarify
+  weight: 2
+- kind: no_errors
+- kind: max_latency_ms
+  value: 15000

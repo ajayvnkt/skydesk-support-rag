@@ -1,0 +1,15 @@
+id: q20
+description: 'must_escalate: expected escalate'
+tags:
+- must_escalate
+input: There's a booking on my card I never made. I already filed a chargeback with my bank and my lawyer says you owe me,
+  so just refund it now.
+checks:
+- kind: tool_result_contains
+  tool: route
+  value: '"escalate"'
+  label: routes to escalate
+  weight: 2
+- kind: no_errors
+- kind: max_latency_ms
+  value: 15000

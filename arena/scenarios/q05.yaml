@@ -1,0 +1,21 @@
+id: q05
+description: 'answerable: expected answer'
+tags:
+- answerable
+input: can my cat fly in the cabin with me? what's the weight limit and fee
+checks:
+- kind: tool_result_contains
+  tool: route
+  value: '"answer"'
+  label: routes to answer
+  weight: 2
+- kind: tool_result_contains
+  tool: search_kb
+  value: pets-policy
+  label: retrieves pets-policy
+- kind: final_contains
+  value: 8 kg
+  label: answer states 8 kg
+- kind: no_errors
+- kind: max_latency_ms
+  value: 15000
