@@ -440,6 +440,8 @@ def build_actions(d: Demo) -> dict:
     def arc_actions(ms):
         d.focus(d.vis(p.locator("[data-testid='stColumn']").filter(
             has=p.locator("h5", has_text="Fix these first"))), pad=4)
+        d.drift(max(600, int(ms * 0.4)))
+        d.focus(d.vis(p.locator("[data-testid='stCaptionContainer']").filter(has_text="Likely failure")), pad=4)
 
     # -- close ------------------------------------------------------------------------------------------
     def close_built(ms):

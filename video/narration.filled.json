@@ -14,7 +14,7 @@
    "do": "Highlight the chat panel (#chat)."},
   {"key": "what_stack", "say": "It runs on LangChain and LangGraph: hybrid keyword and vector search, a reranker, and a confidence check that decides when to hand off.",
    "do": "Open 'How this works' from the chat footer; tour Retrieve, Rerank, Grade, Generate, Verify."},
-  {"key": "what_routes", "say": "Every turn ends as an answer with citations, a clarifying question, or a handoff. The airline site is just a backdrop; the chat is the product.",
+  {"key": "what_routes", "say": "Every turn ends as a cited answer, a clarifying question, or a handoff. The airline site is just a backdrop; the chat is the product.",
    "do": "Highlight the modal flow strip; close the modal and reset the chat (#closeBtn) so the site shows."}
  ]},
  {"id": "chat", "beats": [
@@ -24,7 +24,7 @@
    "do": "Highlight the answer bubble, then its first .cite-chip."},
   {"key": "pets_type", "say": "Next: can I bring my cat in the cabin?",
    "do": "Type, send, wait."},
-  {"key": "pets_answer", "say": "Yes, if cat and carrier weigh eight kilos or less and fit under the seat. The fee is ninety five dollars each way, with sources.",
+  {"key": "pets_answer", "say": "Yes, if cat and carrier weigh eight kilos or less, and the fee is ninety five dollars each way. The answer cites its source.",
    "do": "Highlight the answer bubble, then its first .cite-chip."},
   {"key": "cancel_type", "say": "Now: I booked yesterday, can I cancel for free?",
    "do": "Type, send, wait."},
@@ -52,7 +52,7 @@
    "do": "Open http://localhost:9007, click 'Evaluation' in the sidebar."},
   {"key": "ops_route", "say": "The final version routes nineteen of twenty correctly, with perfect precision and recall on escalations.",
    "do": "Tour metrics 'Route accuracy' and 'Escalation precision / recall'."},
-  {"key": "ops_faith", "say": "I checked faithfulness by hand: fifteen of sixteen answers are fully supported. The AI judge says eighty one percent, so I report both.",
+  {"key": "ops_faith", "say": "I checked faithfulness by hand: fifteen of sixteen answers are fully supported. The AI judge says thirteen of sixteen, so I report both.",
    "do": "Highlight metric 'Faithfulness (manual)'."},
   {"key": "ops_speed", "say": "Median latency is one point five seconds, and model cost is about twenty six cents per thousand questions.",
    "do": "Tour metrics 'Latency p50 / p95' and 'Cost per query'."},
@@ -64,8 +64,8 @@
    "do": "Click '▶ Run analysis'; wait for 'Analysis complete'."},
   {"key": "arc_summary", "say": "Twenty runs, eighty nine percent predicted success, zero claimed but likely failed, and zero critical policy violations.",
    "do": "Scroll to the Summary metrics row; highlight it."},
-  {"key": "arc_actions", "say": "So the fix these first list is empty: no action items for this bot.",
-   "do": "Highlight the 'Fix these first' column."}
+  {"key": "arc_actions", "say": "The fix these first list is empty. It does flag two runs as likely failures, so those are the ones I read first.",
+   "do": "Highlight the 'Fix these first' column, then the verdict caption (two likely failures)."}
  ]},
  {"id": "close", "beats": [
   {"key": "close_built", "say": "I built this with Claude Code. The help center, the tickets and the customers are all synthetic, written for this demo.",

@@ -58,6 +58,7 @@ def numbers() -> dict:
     assert f"{ek['route_accuracy']['k']}/{ek['route_accuracy']['n']}" == mr["route"], (ek["route_accuracy"], mr["route"])
     assert f"{ek['faithful_manual']['k']}/{ek['faithful_manual']['n']}" == mr["fully_faithful"]
 
+    n_faith = int(mr["fully_faithful"].split("/")[1])
     p, r = m["escalation_precision"], m["escalation_recall"]
     esc = "perfect precision and recall" if p == r == 1 else f"{pct(p)} precision and {pct(r)} recall"
 
@@ -69,7 +70,7 @@ def numbers() -> dict:
         "ROUTE_ACC": frac(mr["route"]),
         "ESC_PR": esc,
         "FAITH_MANUAL": frac(mr["fully_faithful"]),
-        "FAITH_JUDGE": pct(m["faithfulness_yes_rate"]),
+        "FAITH_JUDGE": frac(f"{round(m['faithfulness_yes_rate'] * n_faith)}/{n_faith}"),  # the console shows "LLM judge 13/16"
         "LATENCY_P50": seconds(m["latency_ms_p50"]),
         "COST_PER_Q": cents(m["bot_cost_usd_per_query"] * 1000) + " per thousand questions",
         "TOTAL_SPEND": cents(total),
