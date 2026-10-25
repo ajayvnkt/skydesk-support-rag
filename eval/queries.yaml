@@ -1,0 +1,141 @@
+# SkyDesk RAG evaluation set: 20 real-world-style support queries.
+# Schema: see eval/README.md. key_facts are literal phrases found in the cited docs.
+- id: q01
+  query: "how many kg can i check in on skyclassic?"
+  category: answerable
+  expected_doc_ids: [policy-baggage-allowance]
+  expected_behavior: answer
+  key_facts: ["1 checked bag", "23 kg"]
+
+- id: q02
+  query: "I booked a SkyLite ticket 3 hours ago, the flight is in 2 weeks. Can I still cancel and get all my money back?"
+  category: answerable
+  expected_doc_ids: [policy-24-hour-cancellation]
+  expected_behavior: answer
+  key_facts: ["within 24 hours", "at least 7 days before"]
+
+- id: q03
+  query: "my suitcase didnt arrive and I need to buy clothes, how much will you reimburse while i wait?"
+  category: answerable
+  expected_doc_ids: [policy-baggage-claims]
+  expected_behavior: answer
+  key_facts: ["$50 per day", "5 days"]
+
+- id: q04
+  query: "How long is a SkyDesk travel credit valid for?"
+  category: answerable
+  expected_doc_ids: [policy-vouchers-credits]
+  expected_behavior: answer
+  key_facts: ["12 months from the date it was issued"]
+
+- id: q05
+  query: "can my cat fly in the cabin with me? what's the weight limit and fee"
+  category: answerable
+  expected_doc_ids: [pets-policy]
+  expected_behavior: answer
+  key_facts: ["8 kg", "$95 per pet, each way"]
+
+- id: q06
+  query: "my 8 yr old wants to fly alone to visit grandma, is that allowed and what does it cost?"
+  category: answerable
+  expected_doc_ids: [unaccompanied-minors]
+  expected_behavior: answer
+  key_facts: ["mandatory", "$120 each way"]
+
+- id: q07
+  query: "flight got delayed 5 and a half hours bc of a crew scheduling problem. what am i entitled to?"
+  category: answerable
+  expected_doc_ids: [policy-delay-compensation]
+  expected_behavior: answer
+  key_facts: ["$250 travel credit", "full refund of the unused portion"]
+
+- id: q08
+  query: "How do I change the email address on my SkyMiles profile?"
+  category: answerable
+  expected_doc_ids: [manual-update-contact-details]
+  expected_behavior: answer
+  key_facts: ["Profile > Personal details > Contact", "current"]
+
+- id: q09
+  query: "I'm on a SkyClassic fare and need to bring 2 checked suitcases. How much extra if I add it in the app?"
+  category: multi_doc
+  expected_doc_ids: [policy-baggage-allowance, policy-baggage-fees]
+  expected_behavior: answer
+  key_facts: ["1 checked bag", "$40"]
+
+- id: q10
+  query: "my flight landed 4 hours late because of a technical issue with the plane. what compensation do i get and when does it expire?"
+  category: multi_doc
+  expected_doc_ids: [policy-delay-compensation, policy-vouchers-credits]
+  expected_behavior: answer
+  key_facts: ["$100 travel credit", "12 months"]
+
+- id: q11
+  query: "Booked a SkyLite ticket 3 days ago for a flight next month, can I cancel it for a refund?"
+  category: multi_doc
+  expected_doc_ids: [policy-24-hour-cancellation, policy-refunds-cancellations]
+  expected_behavior: answer
+  key_facts: ["within 24 hours", "Non-refundable", "Government taxes and airport fees"]
+
+- id: q12
+  query: "getting error SD-ERR-112 when i try to pay, what does that mean??"
+  category: exact_match
+  expected_doc_ids: [manual-error-codes]
+  expected_behavior: answer
+  key_facts: ["Payment declined", "20 minutes"]
+
+- id: q13
+  query: "app shows BAG-301 when I add my bag"
+  category: exact_match
+  expected_doc_ids: [manual-error-codes]
+  expected_behavior: answer
+  key_facts: ["5 checked bags", "32 kg"]
+
+- id: q14
+  query: "Does SkyFlex let me change my flight without a change fee?"
+  category: exact_match
+  expected_doc_ids: [policy-change-fees]
+  expected_behavior: answer
+  key_facts: ["$0", "fare difference"]
+
+- id: q15
+  query: "can i bring a bag on board?"
+  category: ambiguous
+  expected_doc_ids: [policy-baggage-allowance]
+  expected_behavior: clarify
+  key_facts: ["personal item", "SkyLite"]
+
+- id: q16
+  query: "how much does it cost to change my flight"
+  category: ambiguous
+  expected_doc_ids: [policy-change-fees]
+  expected_behavior: clarify
+  key_facts: ["$75", "Changes not permitted"]
+
+- id: q17
+  query: "is there wifi on the plane and how much does it cost?"
+  category: unanswerable
+  expected_doc_ids: []
+  expected_behavior: escalate
+  key_facts: []
+
+- id: q18
+  query: "do u guys sell travel insurance? how much is it for a domestic trip"
+  category: unanswerable
+  expected_doc_ids: []
+  expected_behavior: escalate
+  key_facts: []
+
+- id: q19
+  query: "my dad passed away last night and i need to fly home for the funeral tmrw. do you have a bereavment discount?"
+  category: must_escalate
+  expected_doc_ids: [policy-bereavement]
+  expected_behavior: escalate
+  key_facts: ["Care Team"]
+
+- id: q20
+  query: "There's a booking on my card I never made. I already filed a chargeback with my bank and my lawyer says you owe me, so just refund it now."
+  category: must_escalate
+  expected_doc_ids: [policy-fraud-chargebacks, policy-legal-complaints]
+  expected_behavior: escalate
+  key_facts: ["Payments Integrity", "Customer Relations"]
